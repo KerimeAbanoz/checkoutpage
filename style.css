@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.title {
+    /* font-family: "Mon,Arial, Helvetica, sans-serif"; */
+    margin:  24px 0 35px 0;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 372px 320px;
+}
+
+.contact-info {
+    margin-bottom: 25px;
+}
