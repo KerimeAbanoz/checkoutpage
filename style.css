@@ -27,3 +27,7 @@ body {
 .contact-info {
     margin-bottom: 25px;
 }
+
+.input-field {
+    width: 100%;
+}
