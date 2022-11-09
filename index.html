@@ -9,6 +9,9 @@
       src="https://kit.fontawesome.com/5c7edfd842.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Checkout Page</title>
   </head>
   <body>
@@ -16,26 +19,31 @@
 
     <main class="container">
       <form action="#" class="input-area">
+
         <div id="contact-info" class="data-form">
-          <h3>Contact information</h3>
+          <h3 class="campo">Contact information</h3>
+
           <div class="campo">
             <label for="email">Email</label>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
+            <div class="input-icons">
+              <i class="fas fa-envelope icon"></i>
               <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter yor email..."
-                required
+              class="input-field"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter yor email..."
+              required
               />
             </div>
           </div>
+
           <div class="campo">
             <label for="phone">Phone</label>
-            <div class="input-field">
-              <i class="fas fa-phone-alt"></i>
+            <div  class="input-icons">
+              <i class="fas fa-phone-alt icon"></i>
               <input
+              class="input-field"
                 type="tel"
                 name="phone"
                 id="phone"
@@ -46,12 +54,16 @@
           </div>
         </div>
 
+
         <div id="shipping-address" class="data-form">
-          <h3>Shipping information</h3>
+          <h3 class="campo">Shipping address</h3>
+
           <div class="campo">
             <label for="name">Full name</label>
-            <div class="input-field">
+            <div class="input-icons">
+              <i class="fas fa-user icon"></i>
               <input
+              class="input-field"
                 type="text"
                 name="name"
                 id="name"
@@ -60,11 +72,13 @@
               />
             </div>
           </div>
+
           <div class="campo">
             <label for="adress">Adress</label>
-            <div class="input-field">
-              <i class="fas fa-home"></i>
+            <div class="input-icons">
+              <i class="fas fa-home icon"></i>
               <input
+              class="input-field"
                 type="text"
                 name="adress"
                 id="adress"
@@ -73,10 +87,13 @@
               />
             </div>
           </div>
+
           <div class="campo">
             <label for="city">City</label>
-            <div class="input-field">
+            <div class="input-icons">
+              <i class="fas fa-city icon"></i>
               <input
+              class="input-field"
                 type="text"
                 name="city"
                 id="city"
@@ -85,42 +102,54 @@
               />
             </div>
           </div>
-          <div class="campo">
-            <label for="country">Country</label>
-            <div class="input-field">
-              <i class="fas fa-globe-europe"></i>
-              <select name="country" id="country" required>
-                <option value="Turkey">Turkey</option>
-                <option value="Turkey">Germany</option>
-                <option value="Turkey">USA</option>
-                <option value="Turkey">Canada</option>
-                <option value="Turkey">UK</option>
-              </select>
+
+
+          <div class="country-post">
+            <div class="campo">
+              <label for="country">Country</label>
+              <div class="input-icons">
+                <i class="fas fa-globe-europe icon"></i>
+                <select class="input-field" name="country" id="country" required>
+                  <option value="Turkey">Turkey</option>
+                  <option value="Turkey">Germany</option>
+                  <option value="Turkey">USA</option>
+                  <option value="Turkey">Canada</option>
+                  <option value="Turkey">UK</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="campo" id="postal-code-field">
-            <label for="postal-code">Post Code</label>
-            <div class="input-field">
-              <i class="fas fa-mail-bulk"></i>
-              <input
+            
+            <div class="campo postal-code" id="postal-code-field">
+              <label for="postal-code">Post Code</label>
+              <div class="input-icons">
+                <i class="fas fa-mail-bulk icon"></i>
+                <input
+                class="input-field"
                 type="text"
                 name="postal-code"
                 id="postal-code"
                 placeholder="Enter yor postal code..."
                 required
-              />
+                />
+              </div>
             </div>
           </div>
+
           <div class="campo">
             <input type="checkbox" name="reminder" id="reminder" required />
-            <label for="reminder">See this information next time</label>
+            <label class="reminder" for="reminder">See this information next time</label>
           </div>
         </div>
-        <!-- <button type="submit">Continue</button> -->
+
+        <div class="button-div">
+          <button class="button" type="submit">Continue</button>
+        </div>
       </form>
 
       <div class="basket">
+
         <div class="products">
+
           <div class="product">
             <img src="./img/photo1.png" alt="bag" />
             <div class="product-info">
@@ -140,32 +169,36 @@
               </div>
             </div>
           </div>
-          <div class="product"></div>
-          <img src="./img/photo2.png" alt="shoe" />
-          <div class="product-info">
-            <h4>Levi Shoes</h4>
-            <p>
+
+          <div class="product">
+            <img src="./img/photo2.png" alt="shoe" />
+            <div class="product-info">
+              <h4>Levi Shoes</h4>
+              <p>
                 <strong>$74.99</strong>
                 <span class="deleted" style="text-decoration: line-through"
-                  >$124.99</span
+                >$124.99</span
                 >
               </p>
               <div class="quantity-controller">
                 <i class="fas fa-minus"></i>
               </button>
               <p id="text1">1</p>
-                <i class="fas fa-plus"></i>
-              </button>
-            </div>
+              <i class="fas fa-plus"></i>
+            </button>
           </div>
         </div>
+      </div>
+    </div>
 
 
         <div class="price-info">
+          <hr>
           <div class="shipping">
             <p>Shipping</p>
             <p>$19</p>
           </div>
+          <hr>
           <div class="total">
             <p>Total</p>
             <p>$148.98</p>
